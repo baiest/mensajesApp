@@ -14,9 +14,9 @@ public class ConnectionDB {
         String url = String.format("jdbc:mysql://%s:%s/%s", HOST, PORT, NAME_DB);
         try {
             connection = DriverManager.getConnection(url, USER, PASS);
-            if(connection != null){
-                System.out.println("Conexión exitosa");
-            }
+//            if(connection != null){
+//                System.out.println("Conexión exitosa");
+//            }
         } catch (SQLException e){
             System.out.println(e);
         }
